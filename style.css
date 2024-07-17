@@ -98,6 +98,7 @@ nav>.icon {
 
 .banner-left {
     max-width: 600px;
+    z-index: 1;
 }
 
 .banner-left>h1 {
@@ -163,7 +164,7 @@ nav>.icon {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
+    z-index: 2;
 }
 
 .dot {
@@ -195,7 +196,7 @@ nav>.icon {
     right: -80px;
     padding: 20px;
     padding-top: 5px;
-
+    z-index: 2;
 }
 
 .two h1 {
@@ -207,6 +208,11 @@ nav>.icon {
     color: var(--white);
     letter-spacing: 1px;
 }
+
+
+
+
+
 
 @media screen and (max-width:576px) {
     .header-section {
