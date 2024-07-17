@@ -12,7 +12,8 @@
 }
 
 :root {
-    --default-color: orange;
+    --default-color: rgb(255, 28, 28);
+    --white: rgba(255, 255, 255, 0.507);
 }
 
 * {
@@ -31,9 +32,8 @@ body {
 
 header {
 
-    height: 720px;
-    background: linear-gradient(to bottom, rgb(17, 17, 17), rgba(119, 119, 119, .2), rgb(17, 17, 17));
-    background-blend-mode: difference;
+    /* height: 720px; */
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(119, 119, 119, .2), rgb(0, 0, 0));
 }
 
 .header-section {
@@ -42,19 +42,22 @@ header {
 }
 
 /* nav section styles  */
-nav{
+nav {
+    margin: 0 120px;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav>h1{
+
+nav>h1 {
     font-size: 2.5rem;
     font-style: italic;
     font-weight: bolder;
     color: var(--default-color);
 }
-nav>ul{
+
+nav>ul {
     display: flex;
     list-style: none;
     border: 1px solid rgba(128, 128, 128, 0.295);
@@ -63,7 +66,8 @@ nav>ul{
     align-items: center;
 
 }
-nav>ul>li{
+
+nav>ul>li {
     font-size: 1rem;
 
     padding: 10px 15px;
@@ -71,25 +75,218 @@ nav>ul>li{
     border-radius: 50px;
     margin: 5px;
 }
-nav>ul>li:nth-child(1){
+
+nav>ul>li:nth-child(1) {
     background-color: var(--default-color);
     font-weight: 600;
 }
-nav>.icon{
+
+nav>.icon {
     display: none;
 }
 
-@media screen and (max-width:576px){
-    .header-section{
+/* banner section styles  */
+
+.banner {
+    margin: 0 120px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.banner-left {
+    max-width: 600px;
+}
+
+.banner-left>h1 {
+    font-size: 5rem;
+    line-height: 100%;
+    margin-bottom: 40px;
+
+    & span {
+        font-family: "Pinyon Script", cursive;
+        font-weight: 100;
+        font-size: 6.5rem;
+    }
+}
+
+.banner-left>p {
+    font-size: 1rem;
+    line-height: 160%;
+    color: var(--white);
+}
+
+.banner-left .button-box {
+    margin-top: 40px;
+}
+
+.banner-left button {
+    padding: 15px 60px;
+    color: white;
+    background-color: var(--default-color);
+    border-radius: 50px;
+    margin-right: 30px;
+    font-size: 1.25rem;
+}
+
+.banner-left button:last-child {
+    background-color: transparent;
+    border: 1px solid grey;
+}
+
+.banner-right {
+    position: absolute;
+    right: 50px;
+}
+
+.banner-right .image {
+    position: relative;
+}
+
+.banner-right .image .box {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.144);
+}
+
+.one {
+    bottom: 70px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: var(--default-color);
+    text-align: center;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    & i {
+        font-size: 1.25rem;
+    }
+}
+
+.one h1 {
+    font-size: 1.75rem;
+    line-height: 150%;
+
+}
+
+.one h5 {
+    color: var(--white);
+}
+
+.two {
+    top: 140px;
+    right: -80px;
+    padding: 20px;
+    padding-top: 5px;
+
+}
+
+.two h1 {
+    font-size: 2.5rem;
+    line-height: 150%;
+}
+
+.two h5 {
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:576px) {
+    .header-section {
         padding: 0 20px;
     }
-    nav>ul{
+
+    nav,
+    .banner {
+        margin: 0;
+    }
+
+    nav>ul {
         display: none;
     }
-    nav>.icon{
+
+    nav>.icon {
         display: block;
-        & i{
+
+        & i {
             font-size: 1.5rem;
         }
+    }
+
+    .banner,
+    .banner-right {
+        position: static;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-left {
+        margin-top: 50px;
+
+    }
+
+    .banner-left h1 {
+        font-size: 2rem;
+        max-width: 200px;
+        line-height: 120%;
+    }
+
+    .banner-left h1 span {
+        font-size: 3rem;
+    }
+
+    .banner-left p {
+        font-size: 0.75rem;
+        max-width: 300px;
+
+    }
+
+    .banner-left .button-box {
+        display: flex;
+
+        justify-content: space-between;
+        max-width: 500px;
+        gap: 60px;
+    }
+
+    .banner-left button {
+        font-size: 1rem;
+        padding: 10px 25px;
+        margin-right: 0;
+    }
+
+    .banner-right {
+        transform: scale(0.8);
+    }
+
+    .one {
+        bottom: 230px;
+        left: -20px;
+        transform: scale(0.8);
+    }
+
+    .two {
+        top: 40px;
+        right: -20px;
+        transform: scale(0.8);
     }
 }
