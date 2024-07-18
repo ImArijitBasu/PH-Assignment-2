@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 @import url('https://fonts.cdnfonts.com/css/miama');
+
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -34,7 +35,7 @@ body {
 header {
 
     /* height: 720px; */
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(119, 119, 119, .2), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(26, 25, 25), rgba(119, 119, 119, 0.336), rgb(0, 0, 0));
 }
 
 .header-section {
@@ -210,9 +211,63 @@ nav>.icon {
     letter-spacing: 1px;
 }
 
+/* change your habit section  */
 
-
-
+.habits{
+    max-width: 1100px;
+    margin: 100px auto;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habits>.habit-text{
+ 
+    max-width: 670px;
+}
+.habits>.habit-text>h1{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 130%;
+    text-align: center;
+}
+.habits>.habit-text>p{
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    line-height: 1.75;
+}
+.habit-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.habit-card{
+    margin-top: 60px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habit-card img{
+    border-radius: 50%;
+}
+.habit-card .card-text{
+    margin-top: 25px;
+    text-align: center;
+}
+.habit-card .card-text h1{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.habit-card .card-text p{
+    font-size: 0.9rem;
+    color: var(--white);
+    font-weight: 400;
+}
 
 
 @media screen and (max-width:576px) {
@@ -282,7 +337,7 @@ nav>.icon {
     }
 
     .banner-right {
-        transform: scale(0.8);
+        margin-top: 50px;
     }
 
     .one {
@@ -295,5 +350,25 @@ nav>.icon {
         top: 40px;
         right: -20px;
         transform: scale(0.8);
+    }
+
+    /* change your habit section  */
+    .habits{
+        margin-top: 0px;
+    }
+    .habits>.habit-text>h1{
+        font-size: 2.25rem;
+    }
+    .habits>.habit-text>p{
+        font-size: 0.9rem;
+        margin-bottom: 60px;
+    }
+    .habit-cards{
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
+    .habit-card {
+        margin-top: 0px;
+        max-width: 220px;
     }
 }
