@@ -45,7 +45,8 @@ header {
 
 /* nav section styles  */
 nav {
-    margin: 0 120px;
+    max-width: 1044px;
+    margin: 0 auto;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -90,7 +91,8 @@ nav>.icon {
 /* banner section styles  */
 
 .banner {
-    margin: 0 120px;
+    margin: 0 auto;
+    max-width: 1044px;
     margin-top: 90px;
     display: flex;
     justify-content: space-between;
