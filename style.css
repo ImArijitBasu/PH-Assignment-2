@@ -217,57 +217,66 @@ nav>.icon {
 
 /* change your habit section  */
 
-.habits{
+.habits {
     max-width: 1100px;
     margin: 100px auto;
- 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.habits>.habit-text{
- 
+
+.habits>.habit-text {
+
     max-width: 670px;
 }
-.habits>.habit-text>h1{
+
+.habits>.habit-text>h1 {
     font-size: 3rem;
     font-weight: 900;
     line-height: 130%;
     text-align: center;
 }
-.habits>.habit-text>p{
+
+.habits>.habit-text>p {
     color: var(--white);
     text-align: center;
     letter-spacing: 1px;
     margin-top: 15px;
     line-height: 1.75;
 }
-.habit-cards{
+
+.habit-cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
 }
-.habit-card{
+
+.habit-card {
     margin-top: 60px;
- 
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.habit-card img{
+
+.habit-card img {
     border-radius: 50%;
 }
-.habit-card .card-text{
+
+.habit-card .card-text {
     margin-top: 25px;
     text-align: center;
 }
-.habit-card .card-text h1{
+
+.habit-card .card-text h1 {
     font-size: 1.25rem;
     font-weight: 600;
     padding-bottom: 10px;
 }
-.habit-card .card-text p{
+
+.habit-card .card-text p {
     font-size: 0.9rem;
     color: var(--white);
     font-weight: 400;
@@ -275,9 +284,49 @@ nav>.icon {
 
 /* run section */
 
-.run{
+.run {
     margin: 0 auto;
     max-width: 1044px;
+    border-radius: 18px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+.run>.run-left{
+    margin: 40px 55px;
+}
+.run>.run-left>h1{
+    max-width: 300px;
+    line-height: 120%;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    ~ p{
+        color: var(--white);
+        font-size: .9rem;
+        max-width: 440px;
+        margin-top: 15px;
+    }
+    ~ button{
+        background-color: var(--default-color);
+        font-size: 1.1rem;
+        color: white;
+        padding: 15px 70px;
+        border-radius: 42px;
+        margin-top: 30px;
+    }
+}
+.run>.run-right {
+    margin: 30px;
+    max-width: 360px;
+    max-height: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.run>.run-right>img {
+    width: 150%;
+    border-radius: 18px;
 }
 
 @media screen and (max-width:576px) {
@@ -362,24 +411,49 @@ nav>.icon {
     }
 
     /* change your habit section  */
-    .habits{
+    .habits {
         margin-top: 0px;
     }
-    .habits>.habit-text>h1{
+
+    .habits>.habit-text>h1 {
         font-size: 2.25rem;
     }
-    .habits>.habit-text>p{
+
+    .habits>.habit-text>p {
         font-size: 0.9rem;
         margin-bottom: 60px;
     }
-    .habit-cards{
-        grid-template-columns: repeat(1,1fr);
+
+    .habit-cards {
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
     }
+
     .habit-card {
         margin-top: 0px;
         max-width: 220px;
     }
+    /* run section */
+    .run {
+        flex-direction: column;
+    }
+    .run>.run-left{
+        margin: 30px ;
+    }
+    .run>.run-left>h1{
+        font-size: 2.2rem;
+        ~ p{
+            font-size: 0.8rem;
+            line-height: 24px;
+        }
+        ~ button{
+            width: 100%;
+        }
+    }
+    .run>.run-right{
+        max-height: 170px;
+    }
+    .run>.run-right>img{
+        width: 100%;
+    }
 }
-
-
