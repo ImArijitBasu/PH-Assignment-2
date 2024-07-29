@@ -351,9 +351,8 @@ nav>.icon {
 }
 /* bmi calculator section second part  */
 .bmi-chart{
-    /* display: none; */
     background-color: #222222;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     gap:180px;
 }
