@@ -335,7 +335,6 @@ nav>.icon {
 /* bmi calculator section  */
 
 .bmi-calc{
-    display: none;
     max-width: 660px;
     margin: 90px auto;
     > h1{
