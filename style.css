@@ -292,22 +292,26 @@ nav>.icon {
     display: flex;
     justify-content: space-between;
 }
-.run>.run-left{
+
+.run>.run-left {
     margin: 40px 55px;
 }
-.run>.run-left>h1{
+
+.run>.run-left>h1 {
     max-width: 300px;
     line-height: 120%;
     font-size: 3rem;
     font-weight: 900;
     text-align: left;
-    ~ p{
+
+    ~p {
         color: var(--white);
         font-size: .9rem;
         max-width: 440px;
         margin-top: 15px;
     }
-    ~ button{
+
+    ~button {
         background-color: var(--default-color);
         font-size: 1.1rem;
         color: white;
@@ -316,17 +320,16 @@ nav>.icon {
         margin-top: 30px;
     }
 }
-.run>.run-right {
-    margin: 30px;
-    max-width: 360px;
-    max-height: 300px;
-    border-radius: 18px;
-    overflow: hidden;
-}
 
-.run>.run-right>img {
-    width: 150%;
-    border-radius: 18px;
+.run>.run-right-content>.run-right {
+    margin: 30px;
+    height: 300px;
+    width: 360px;
+    background-image: url(images/run.jpg);
+    background-size: 1500px 987px;
+    background-position: -750px -200px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 @media screen and (max-width:576px) {
@@ -433,27 +436,41 @@ nav>.icon {
         margin-top: 0px;
         max-width: 220px;
     }
+
     /* run section */
     .run {
         flex-direction: column;
+        align-items: center;
     }
-    .run>.run-left{
-        margin: 30px ;
+
+    .run>.run-left {
+        margin: 30px;
     }
-    .run>.run-left>h1{
+
+    .run>.run-left>h1 {
         font-size: 2.2rem;
-        ~ p{
+
+        ~p {
             font-size: 0.8rem;
             line-height: 24px;
         }
-        ~ button{
+
+        ~button {
             width: 100%;
         }
     }
-    .run>.run-right{
-        max-height: 170px;
+    .run>.run-right-content{
+        height: 150px;
+        width: 300px;
+        overflow: hidden;
+        margin-bottom: 30px;
     }
-    .run>.run-right>img{
+    .run>.run-right-content>.run-right {
+        margin:0px;
         width: 100%;
+        height: 100%;
+        background-size:cover;
+        background-position:center;
     }
+
 }
