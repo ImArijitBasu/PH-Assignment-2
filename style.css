@@ -13,9 +13,13 @@
         "slnt" 0;
 }
 
+button{
+    cursor: pointer;
+}
 :root {
-    --default-color: rgb(255, 28, 28);
+    --default-color: rgb(10, 192, 25);
     --white: rgba(255, 255, 255, 0.507);
+    /* rgb(255, 28, 28) */
 }
 
 * {
@@ -430,6 +434,140 @@ input::placeholder{
     font-size: 1.3rem;
     border-radius: 42px;
 }
+
+/* price section  */
+
+.price{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+    padding: 30px 0px;
+}
+.price-left{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card{
+    width: 220px;
+    height: 420px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 40px 2px #3b3b3b;
+    border-radius: 5px;
+}
+
+.c-one{
+    transform: scale(0.9);
+}
+.c-one>.btn{
+    margin-top: 60px;
+}
+.c-two{
+    background-color: rgba(255, 255, 255, 0.164);
+}
+.card>.top{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1{
+        font-size: 1.3rem;
+        color: var(--white);
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    > h2{
+        font-size: 2rem;
+        color: var(--default-color);
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    > h3{
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 200;
+        padding-bottom: 20px;
+    }
+}
+.card>p{
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+.card>p>i{
+    color: var(--default-color);
+    padding:5px;
+}
+.card>.btn{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card>.btn>button{
+    margin-top: 50px;
+    background-color: var(--default-color);
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    border-radius: 42px;
+    
+}
+
+.price-right{
+    border: 2px solid var(--default-color);
+    border-radius: 30px;
+    max-width: 600px;
+    padding: 20px;
+}
+.price-right>.heading{
+    font-size: 1.5rem;
+    position: relative;
+    color: var(--white);
+    padding-bottom: 30px;
+}
+.heading::after{
+    content:' ';
+    height: 3px;
+    background-color: var(--default-color);
+    width: 70px;
+    border-radius:0 50% 50% 0;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+.price-right>h1{
+    font-size: 1.8rem;
+    font-weight: 450;
+    padding-bottom: 30px;
+}
+.price-right>p{
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+.price-right>.plans>h2{
+    font-size: 1.4rem;
+    font-weight: 450;
+    padding-bottom: 20px;
+
+}
+.plans>.plan{
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    & i{
+        color: var(--default-color);
+    }
+}
 @media screen and (max-width:576px) {
     .header-section {
         padding: 0 20px;
@@ -602,5 +740,31 @@ input::placeholder{
     .bmi-button{
         font-size: 1rem;
         padding: 15px 50px;
+    }
+
+    /* price section  */
+    .price{
+        margin: 50px auto;
+        justify-content: center;
+        background-color: #222222;
+        padding: 30px 0px;
+        flex-direction: column-reverse;
+    }
+    .price .btn{
+        padding: 5px 20px;
+    }
+    .price-left{
+        padding: 0;
+        transform: scale(0.7);
+        
+    }
+    .price-right{
+        margin: 0px 30px;
+    }
+    .card{
+        margin: 0px;
+    }
+    .c-two{
+        height: 440px;
     }
 }
