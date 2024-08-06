@@ -919,20 +919,22 @@ hr {
         margin: -30px;
     }
 
-    .bmi-left {
+    .bmi-chart>.bmi-left {
         padding: 20px;
-        height: 400px;
-
+        padding-right: 90px;
+        max-height: 350px;
         >h1 {
             margin: 0px auto;
+            padding-bottom: 40px;
+            font-size: 1.2rem;
         }
     }
 
-    .bmi-right {
+    .bmi-chart>.bmi-right {
         padding: 20px;
-
         >h1 {
             margin-top: 0px;
+            font-size: 1.2rem;
         }
     }
 
