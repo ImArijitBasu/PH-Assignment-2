@@ -608,13 +608,13 @@ input::placeholder {
 
 /* meet our team section  */
 
-.team {
+.teams{
     max-width: 1144px;
 
     margin: 0 auto;
 }
 
-.team>.team-head {
+.teams>.team-head {
     text-align: center;
 
     max-width: 700px;
@@ -632,7 +632,70 @@ input::placeholder {
     }
 }
 
-.team-members {
+.team-container {
+    max-width: 1060px;
+    background-color: #222222;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas: 
+    "one two three"
+    "four five six";
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.team {
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 272px;
+    background-color: red;
+    color: white;
+    border-radius: 18px;
+    position: relative;
+    >h1{
+        position: absolute;
+        bottom: 35px;
+        left: 20px;
+        font-size: 1.5rem;
+    }
+    >p{
+        position: absolute;
+        bottom: 15px;
+        color:var(--white);
+        left: 20px;
+        font-size: 1rem;
+    }
+}
+
+.team-one {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer1.png);
+    grid-area: one;
+}
+.team-two{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer2.png);
+    grid-area: two;
+}
+.team-three{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer3.png);
+    grid-area: three;
+}
+.team-four{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer4.png);
+    grid-area: four;
+}
+.team-five{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer5.png);
+    grid-area: five;
+}
+.team-six{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer6.png);
+    grid-area: six;
+}
+
+/* .team-members {
     background-color: #222222;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -669,7 +732,7 @@ input::placeholder {
         font-size: 0.9rem;
         color: var(--white);
     }
-}
+} */
 
 /* footer section  */
 
@@ -988,17 +1051,20 @@ hr {
     .team-head {
         transform: scale(0.8);
     }
-
-    .team-members {
-        background-color: #222222;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        margin-top: 60px;
-        padding: 30px;
-        border-radius: 28px;
+    .team-container{
+        /* grid-template-columns: repeat(1 , 1fr); */
+        grid-template-areas: 
+        "two"
+        "five"
+        "three"
+        "six";
     }
-
+    .team-one{
+        display: none;
+    }
+    .team-four{
+        display: none;
+    }
     /* footer section  */
     footer{
         padding: 0 20px;
