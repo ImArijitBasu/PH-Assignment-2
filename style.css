@@ -670,7 +670,7 @@ input::placeholder {
     }
 }
 .team-one {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer1.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(images/trainer1.png);
     grid-area: one;
     background-size: cover;
     background-position: center;
