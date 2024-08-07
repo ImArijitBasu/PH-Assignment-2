@@ -676,7 +676,7 @@ input::placeholder {
     background-position: center;
 }
 .team-two{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer2.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(./images/trainer2.png);
     grid-area: two;
     background-size: cover;
     background-position: center;
