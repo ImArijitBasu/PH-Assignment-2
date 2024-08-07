@@ -669,30 +669,41 @@ input::placeholder {
         font-size: 1rem;
     }
 }
-
 .team-one {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer1.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer1.png);
     grid-area: one;
+    background-size: cover;
+    background-position: center;
 }
 .team-two{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer2.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer2.png);
     grid-area: two;
+    background-size: cover;
+    background-position: center;
 }
 .team-three{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer3.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer3.png);
     grid-area: three;
+    background-size: cover;
+    background-position: center;
 }
 .team-four{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer4.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer4.png);
     grid-area: four;
+    background-size: cover;
+    background-position: center;
 }
 .team-five{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer5.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer5.png);
     grid-area: five;
+    background-size: cover;
+    background-position: center;
 }
 .team-six{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer6.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(/images/trainer6.png);
     grid-area: six;
+    background-size: cover;
+    background-position: center;
 }
 
 /* .team-members {
