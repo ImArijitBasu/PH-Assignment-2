@@ -20,7 +20,6 @@ button {
 :root {
     --default-color: rgb(255, 28, 28);
     --white: rgba(255, 255, 255, 0.507);
-    /* rgb(255, 28, 28) */
 }
 
 * {
