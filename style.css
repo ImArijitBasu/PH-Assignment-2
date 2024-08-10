@@ -668,6 +668,7 @@ input::placeholder {
         font-size: 1rem;
     }
 }
+/* team animation start  */
 .team:hover{
     box-shadow: 0px 0px 10px 1px var(--default-color);
     z-index: 100;
@@ -683,6 +684,7 @@ input::placeholder {
     background-size: cover;
     background-position: center;
 }
+/* end  */
 .team-two{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.096)), url(images/trainer2.png);
     grid-area: two;
